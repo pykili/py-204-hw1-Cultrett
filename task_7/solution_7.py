@@ -1,9 +1,8 @@
-a=""
-string = input()
-num = len(string)
-for i in range(0, num):
-  a=(a + string[num-i-1])
-if a==string:
-  is_palindrom=True
-else: is_palindrom=False
+str = input()
+is_palindrom = False
+str1 = ""
+for char in str:
+    str1 = char + str1
+if str == str1:
+    is_palindrom = True
 print(is_palindrom)
